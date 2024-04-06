@@ -1,0 +1,233 @@
+
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    background-color: hsl(0, 0%, 81%);
+}
+  
+#testimonials {
+    max-width: 1440px;
+    padding: 40px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 20px;
+    padding: 40px;
+    padding-bottom:25px;
+    padding-top: 25px;
+    /* padding: 30px; */
+    /* padding-top: 25px; */
+    /* padding-bottom: 25px; */
+}
+
+.review img{
+    height:30px;
+    width: 30px;
+    border: solid hsl(210, 46%, 95%, 50%) 2px;
+    border-radius: 50px;
+}
+
+.reviewer {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+}
+
+.name, .position{
+    margin:3px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+
+.review-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+}
+
+.comment {
+    margin-top: 5px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.2rem; 
+    font-weight: 500;
+}
+
+.daniel {
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    background-color: hsl(263, 55%, 52%);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+
+.daniel .review-title {
+    color: hsl(210, 46%, 95%);
+}
+
+.daniel .comment {
+    color: hsl(210, 46%, 95%, 70%);
+}
+
+.daniel .name {
+    color: hsl(210, 46%, 95%);
+}
+
+.daniel .position {
+    color: hsl(210, 46%, 95%, 50%);
+}
+
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.jonathan .review-title {
+    color: hsl(210, 46%, 95%);
+}
+
+.jonathan .comment {
+    color: hsl(210, 46%, 95%, 70%);
+}
+
+.jonathan .name {
+    color: hsl(210, 46%, 95%);
+}
+
+.jonathan .position {
+    color: hsl(210, 46%, 95%, 50%);
+}
+
+.jeanette {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+.jeanette .position, .comment {
+    color: hsl(219, 29%, 14%, 70%);
+}
+
+.jeanette .review-title {
+    padding-right: 30px;
+}
+
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.patrick .review-title {
+    color: hsl(210, 46%, 95%);
+}
+
+.patrick .comment {
+    color: hsl(210, 46%, 95%, 70%);
+}
+
+.patrick .name {
+    color: hsl(210, 46%, 95%);
+}
+
+.patrick .position {
+    color: hsl(210, 46%, 95%, 50%);
+}
+
+.kira {
+    background-color: hsl(0, 0%, 100%);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.kira {
+    color: hsl(219, 29%, 14%);
+}
+
+.kira .position, .comment {
+    color: hsl(219, 29%, 14%, 70%);
+}
+
+
+@media (width<768px) {
+    #testimonials {
+        display: flex;
+        flex-direction:column;
+        padding: 0;
+    }
+
+}
+
+@media (width >= 768px) and (width <= 992px) {
+    #testimonials {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        padding: 100px;
+    }
+
+    .daniel {
+        grid-area: 1/1/2/4;
+    }
+
+    .jonathan {
+        grid-area: 2/1/3/4;
+    }
+
+    .jeanette {
+        grid-area: 3/1/4/4;
+    }
+
+    .patrick {
+        grid-area: 4/1/5/4;
+    }
+
+    .kira {
+        grid-area: 5/1/6/4;
+    }
+    
+    .review {
+        padding: 20px;
+    }
+
+    .review-title {
+        font-size: 18px;
+    }
+}
+
+@media (width>992px) and (width<1200px) {
+    .review {
+        padding: 20px;
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
