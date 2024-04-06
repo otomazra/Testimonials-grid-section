@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/otomazra/Testimonials-grid-section)
-- Live Site URL: [Add live site URL here](https://otomazra.github.io/Testimonials-grid-section/)
+- Solution URL: [Testimonials Grid Section](https://github.com/otomazra/Testimonials-grid-section)
+- Live Site URL: [Testimonials Grid Section](https://otomazra.github.io/Testimonials-grid-section/)
 
 ## My process
 
@@ -59,5 +59,5 @@ I still feel lack of front-end confidence. Even though I have done multiple type
 
 - Website - [Otar Mazrashvili](https://github.com/otomazra)
 - Frontend Mentor - [@otomazra](https://www.frontendmentor.io/profile/otomazra)
-- 
+  
 
